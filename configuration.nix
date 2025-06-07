@@ -93,7 +93,6 @@
       vimAlias = true;
     };
 
-    starship.enable = true;
     zsh.enable = true;
   };
   # List packages installed in system profile. To search, run:
