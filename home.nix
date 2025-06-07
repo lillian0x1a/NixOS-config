@@ -5,4 +5,7 @@
     stateVersion = "25.05";
   };
   programs.home-manager.enable = true; # home-manager自身でhome-managerを有効化
+  home.packages = with pkgs; [
+    vscode
+  ];
 }
