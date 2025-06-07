@@ -8,7 +8,6 @@
     ./hyprlock.nix
     ./zsh.nix
     ./starship.nix
-    ./hyprland-autostart.nix
     ./hyprland.nix
   ];
 
