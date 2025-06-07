@@ -89,24 +89,11 @@
     zsh.enable = true;
   };
 
-  environment.systemPackages = with pkgs; [
-    fcitx5
-    fcitx5-mozc
-    fcitx5-configtool
-  ];
-
   # Input method: fcitx5 with mozc
   i18n.inputMethod = {
-    enabled = "fcitx5";
-    fcitx5.addons = [ pkgs.fcitx5-mozc ];
-  };
-
-  # Set environment variables for fcitx5
-  environment.sessionVariables = {
-    GTK_IM_MODULE = "fcitx";
-    QT_IM_MODULE = "fcitx";
-    XMODIFIERS = "@im=fcitx";
-    INPUT_METHOD = "fcitx";
+    enable = true;
+    type = "fcitx5";
+    fcitx5.addons = with pkgs; [ fcitx5-mozc fcitx5-gtk ];
   };
 
   system.stateVersion = "25.05"; # Did you read the comment?
