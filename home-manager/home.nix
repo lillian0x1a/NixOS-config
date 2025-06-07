@@ -1,9 +1,16 @@
-{ config, pkgs, lib, ... }:
+{ config, pkgs, ... }:
 
 {
   imports = [
+    ./wofi.nix
+    ./mako.nix
+    ./swaylock.nix
+    ./swayidle.nix
+    ./hyprpaper.nix
+    ./hyprlock.nix
     ./zsh.nix
     ./starship.nix
+    ./hyprland-autostart.nix
   ];
 
   home = rec { # recでAttribute Set内で他の値を参照できるようにする

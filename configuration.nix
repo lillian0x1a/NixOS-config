@@ -63,6 +63,7 @@
     swayidle       # 画面消灯・ロック
     hyprpaper      # Hyprland用壁紙
     hyprlock       # Hyprland用ロック
+    networkmanagerapplet # ← 追加: ネットワーク管理アプレット
   ];
 
   system.stateVersion = "25.05"; # Did you read the comment?
