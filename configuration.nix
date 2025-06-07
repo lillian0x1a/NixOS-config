@@ -58,9 +58,6 @@
     wl-clipboard   # クリップボード
     grim           # スクリーンショット
     slurp          # 範囲選択
-    swaybg         # 壁紙
-    swaylock       # ロック画面
-    swayidle       # 画面消灯・ロック
     hyprpaper      # Hyprland用壁紙
     hyprlock       # Hyprland用ロック
     networkmanagerapplet # ← 追加: ネットワーク管理アプレット
