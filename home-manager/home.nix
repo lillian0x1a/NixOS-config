@@ -9,6 +9,7 @@
     ./zsh.nix
     ./starship.nix
     ./hyprland.nix
+    ./waybar.nix
   ];
 
   home = rec { # recでAttribute Set内で他の値を参照できるようにする

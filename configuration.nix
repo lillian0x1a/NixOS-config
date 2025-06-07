@@ -60,7 +60,8 @@
     slurp          # 範囲選択
     hyprpaper      # Hyprland用壁紙
     hyprlock       # Hyprland用ロック
-    networkmanagerapplet # ← 追加: ネットワーク管理アプレット
+    networkmanagerapplet #ネットワーク管理アプレット
+    waybar         # ステータスバー
   ];
 
   system.stateVersion = "25.05"; # Did you read the comment?

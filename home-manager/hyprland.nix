@@ -4,7 +4,6 @@
   wayland.windowManager.hyprland = {
     enable = true;
     settings = {
-      # 基本設定例
       monitor = ",preferred,auto,1";
       input = {
         kb_layout = "us";
