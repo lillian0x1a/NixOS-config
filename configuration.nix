@@ -30,6 +30,9 @@
   services.displayManager.sddm.enable = true;
   services.desktopManager.plasma6.enable = true;
 
+  # Hyprlandを有効化
+  programs.hyprland.enable = true;
+
   # Configure keymap in X11
   services.xserver.xkb = {
     layout = "us";
@@ -48,6 +51,19 @@
 
     zsh.enable = true;
   };
+
+  environment.systemPackages = with pkgs; [
+    wofi           # ランチャー
+    mako           # 通知デーモン
+    wl-clipboard   # クリップボード
+    grim           # スクリーンショット
+    slurp          # 範囲選択
+    swaybg         # 壁紙
+    swaylock       # ロック画面
+    swayidle       # 画面消灯・ロック
+    hyprpaper      # Hyprland用壁紙
+    hyprlock       # Hyprland用ロック
+  ];
 
   system.stateVersion = "25.05"; # Did you read the comment?
   nix = {
