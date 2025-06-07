@@ -39,6 +39,9 @@
         "nm-applet"
         "mako"
         "fcitx5"
+        "waybar"
+        "hyprpaper"
+        "hyprlock"
         # 必要なら他の自動起動アプリもここに追加
       ];
     };
