@@ -1,4 +1,9 @@
 {pkgs, ...}: {
+  home.packages = with pkgs; [
+    eza # lsの代わりに使う
+    bat # catの代わりに使う
+    ripgrep # grepの代わりに使う
+  ];
   programs.zsh = {
     enable = true;
     autocd = true; # cdなしでファイルパスだけで移動
