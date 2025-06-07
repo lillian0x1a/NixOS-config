@@ -7,7 +7,7 @@
     };
   };
 
-  outputs = inputs: {
+  outputs = { self, nixpkgs, home-manager, ... }@inputs:{
     nixosConfigurations = {
       myNixOS = inputs.nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
@@ -17,19 +17,19 @@
         ];
       };
     };
-  };
-  homeConfigurations = {
-    myHome = inputs.home-manager.lib.homeManagerConfiguration {
-      pkgs = import inputs.nixpkgs {
-        system = "x86_64-linux";
-        config.allowUnfree = true; # プロプライエタリなパッケージを許可
+    homeConfigurations = {
+      myHome = inputs.home-manager.lib.homeManagerConfiguration {
+        pkgs = import inputs.nixpkgs {
+          system = "x86_64-linux";
+          config.allowUnfree = true; # プロプライエタリなパッケージを許可
+        };
+        extraSpecialArgs = {
+          inherit inputs;
+        };
+        modules = [
+          ./home.nix
+        ];
       };
-      extraSpecialArgs = {
-        inherit inputs;
-      };
-      modules = [
-        ./home.nix
-      ];
     };
   };
 }
