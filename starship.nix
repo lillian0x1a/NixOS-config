@@ -1,4 +1,9 @@
+{ pkgs, ... }:
 {
+  home.packages = with pkgs; [
+    starship
+  ];
+
   programs.starship = {
     enable = true;
     settings = {
@@ -73,9 +78,4 @@
       spack.symbol = "🅢 ";
     };
   };
-}
-{
-  home.packages = with pkgs; [
-    starship
-  ];
 }
