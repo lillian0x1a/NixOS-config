@@ -9,15 +9,15 @@
         kb_layout = "us";
       };
       bind = [
-        "SUPER+Q,killactive,"
-        "SUPER+RETURN,exec,alacritty"
-        "SUPER+D,exec,wofi --show drun"
-        "SUPER+SHIFT+E,exit,"
-        "SUPER+1,workspace,1"
-        "SUPER+2,workspace,2"
-        "SUPER+3,workspace,3"
-        "SUPER+4,workspace,4"
-        "SUPER+5,workspace,5"
+        "SUPER,Q,killactive,"
+        "SUPER,RETURN,exec,alacritty"
+        "SUPER,D,exec,wofi --show drun"
+        "SUPER,SHIFT+E,exit,"
+        "SUPER,1,workspace,1"
+        "SUPER,2,workspace,2"
+        "SUPER,3,workspace,3"
+        "SUPER,4,workspace,4"
+        "SUPER,5,workspace,5"
       ];
       bindm = [
         "SUPER,moveactive"
